@@ -17,9 +17,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from hello.views import hello_world
+from hello.views import hello_world, secret_code
 
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("", hello_world),
+    path("secret/", secret_code),
 ]
